@@ -152,18 +152,21 @@ class CommandsModule(object):
         final_text=final_text.format(company_name,place,key_word,job_title,Description,email,"telegram")
         print "last final test :",final_text
 #######################################
-        main_file="/home/fox/Documents/telegram_bot/itniro/page/index.html"
+        # main_file="/home/fox/Documents/telegram_bot/itniro/page/index.html"
+        main_file="/root/itniro/page/index.html"
         file=open(main_file,"r+")
         text=file.read()
         dic={"IOS":job_title,"email":email,"company":company_name,"<li></li>":Description}
         text=self.replace_all(text,dic)
         file.close()
-        second_file="/home/fox/Documents/telegram_bot/itniro/page/index2.html"
+        #second_file="/home/fox/Documents/telegram_bot/itniro/page/index2.html"
+        second_file="/root/itniro/page/index2.html"
         file2=open(second_file,"w")
         file2.write(text)
         file2.close()
-        img_file="/home/fox/Documents/telegram_bot/itniro/img/{}.png".format(user_id1)
-        OUTPUT="/home/fox/Documents/telegram_bot/itniro/img/index.png"
+        img_file="/root/itniro/img/{}.png".format(user_id1)
+        #OUTPUT="/home/fox/Documents/telegram_bot/itniro/img/index.png"
+        
         imgkit.from_file(second_file,img_file)
         self.send_photos(user_id1,img_file)
         #bot.send_photo(chat_id=user_id1,caption="salam",photo=open(img_file, 'rb'))
