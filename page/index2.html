@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>page</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @font-face {
+            font-family: 'IranSans';
+            src: url('fonts/iran_sans.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        section {
+            font-family: IranSans;
+            background: url('images/bg.jpg') repeat fixed center center / cover transparent;
+        }
+        .row{
+            margin-right: 0px;
+            margin-left: 0px;
+        }
+        .first_box{
+            padding: 30px;
+            background-color: #37a99b;
+            border-bottom-right-radius: 16px;
+            border-bottom-left-radius: 16px;
+        }
+        .first_box span{
+           color: #ffffff;
+            position: relative;
+            top: 10px;
+            font-size: 30px;
+        }
+        .second_box{
+            padding: 2px;
+            margin-top: 25px;
+            border-top: 1px solid #37a99b;
+            border-bottom: 1px solid #37a99b;
+        }
+        .second_box span{
+            font-weight: bold;
+            font-size: 45px;
+            color: white;
+        }
+        .third_box{
+            margin-top: 20px;
+        }
+        .third_box span{
+            font-weight: bold;
+            font-size: 30px;
+            color: white;
+        }
+        .list_option{
+            position: relative;
+            list-style: none;
+            padding-left: 0px;
+            text-align: right;
+            margin-right: 10%;
+            direction: rtl;
+            margin-top: 4%;
+            margin-bottom: 2%;
+        }
+        .list_option li{
+            font-size: 30px;
+            color: white;
+            font-weight:bold;
+        }
+        .list_option li::before {
+            content: '-';
+            position: relative;
+            top: 1px;
+            right: -7px;
+            color: #37a99b;
+        }
+        .fourth_box {
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        .fourth_box span {
+            font-size: 25px;
+            text-shadow: 1px 0px #37a99b;
+            color: #fff;
+        }
+
+        .shape {
+            color: #37a99b;
+            position: relative;
+            right: 6px;
+            top: -1px;
+            font-size: 17px;
+        }
+    </style>
+
+</head>
+<body>
+<div style="width: 100%; height: 114%; opacity: 0.6;background-color: black;position: absolute;"></div>
+<section>
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4 text-center first_box">
+            <span>دعوت به همکاری</span>
+        </div>
+        <div class="col-md-4 col-md-offset-4 text-center second_box">
+            <span>jj Developer</span>
+        </div>
+        <div class="col-md-4 col-md-offset-4 text-center third_box">
+            <span>در شرکت دانش بنیان</span>
+        </div>
+    </div>
+    <div class="row">
+       <ul class="list_option">
+           <li>مسلط به زبان Swift یا Objective-c</li>
+           <li>تسلط بر مفاهیم OOP</li>
+           <li>حداقل ۲ سال سابقه مرتبط</li>
+            <li>مسلط به زبان Swift یا Objective-c</li>
+           <li>تسلط بر مفاهیم OOP</li>
+           <li>حداقل ۲ سال سابقه مرتبط</li>
+       </ul>
+    </div>
+    <div class="row rtl text-center fourth_box">
+        <div class="col-md-6 text-left" style="padding-left: 5%;padding-top: 3%">
+            <img src="images/logo.png" style="width: 75px;"><br>
+            <i class="fa fa-telegram shape" aria-hidden="true"></i><span>@itniro</span>
+        </div>
+        <div class="col-md-6 text-right" style="padding-top: 2.5%;">
+            <div style="padding-right: 25%;">
+                <span>: ارسال رزومه به </span>
+            </div>
+            <div class="text-left">
+                <i class="fa fa-envelope shape" aria-hidden="true"></i><span>info@example.com</span>
+            </div>
+            <div class="text-left">
+                <i class="fa fa-telegram shape" aria-hidden="true"></i><span> @jobs_jjjjj </span>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
