@@ -4,7 +4,7 @@ import sys
 reload(sys)
 sys.setdefaultencoding('utf-8')
 import imgkit
-#from bottle import route, run, static_file
+
 import thread
 import time 
 from store import TinyDBStore
@@ -80,7 +80,9 @@ class CommandsModule(object):
             CommandHandler('help',self.welcome_bot),
             CallbackQueryHandler(self.button),
             MessageHandler([Filters.text], self.message),
-            CommandHandler('finish',self.bot.send_photo(chat_id=user_id1,caption="salam",photo=open(img_file, 'rb')))]
+            
+            CommandHandler('finish',self.finish)]
+            
         
 
     def get_handlers(self):
@@ -142,6 +144,7 @@ class CommandsModule(object):
         company_name=draft['event']['company_name']
         place=draft['event']['place']
         email=draft['event']['email']
+        Description=draft['event']['Description']
         Description=split_text(Description)
         key_word=draft['event']['sharp_word']
         job_title=draft['event']['job_title']
